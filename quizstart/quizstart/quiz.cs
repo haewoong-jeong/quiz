@@ -16,8 +16,19 @@ namespace quizstart
             Console.WriteLine("{0}", sum);
         }
         public static void Q2()
+        {           
+        }
+        public static void Q3()
         {
-            
+            long num = 600851475143;
+            for (int i = 2; i <= num; i++)
+            {
+                while (num % i == 0)
+                {
+                    num /= i;
+                    Console.WriteLine("{0}", i);
+                }
+            }
         }
     }
 }
