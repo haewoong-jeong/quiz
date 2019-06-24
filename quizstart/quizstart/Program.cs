@@ -6,7 +6,8 @@ namespace quizstart
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Heldasdlo  Wortdld!");
+            quiz.Q1();
         }
+      
     }
 }
