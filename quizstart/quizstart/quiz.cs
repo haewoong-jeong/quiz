@@ -59,5 +59,21 @@ namespace quizstart
                 num++;                
             }          
         }
+        public static void Q5()
+        {
+            int j;
+            int count = 1;
+            for (int i = 2; i <104750; i++)
+            {                
+                for (j = 2; j < i; j++)
+                {
+                    if (i % j == 0) {                       
+                        break;                       
+                    }                    
+                }
+                if (i==j) { Console.WriteLine("{0} {1}", i, count); count++; }                
+                                      
+            }
+        }
     }
 }

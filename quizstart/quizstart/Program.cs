@@ -7,7 +7,7 @@ namespace quizstart
         static void Main(string[] args)
         {
             //quiz.Q1();
-            quiz.Q4();
+            quiz.Q5();
         }
       
     }
