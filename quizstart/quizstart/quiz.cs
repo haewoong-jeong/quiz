@@ -47,17 +47,17 @@ namespace quizstart
         public static void Q4()
         {
             int num =1;
+            int count = 0;
             while (true)
             {
-                for (int i = 1; i <= 10; i++)
+                for (int i = 1; i <= 20; i++)
                 {
-                    if (num % i == 0) Console.WriteLine("{0}", i);
-                    else break;
+                    if (num % i == 0) { count++; }
+                    else { count = 0; break; }
+                    if (count == 20) { Console.WriteLine("{0}", num); break; }               
                 }
-                num++;
-                
-            }
-          
+                num++;                
+            }          
         }
     }
 }
