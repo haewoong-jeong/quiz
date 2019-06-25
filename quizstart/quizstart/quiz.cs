@@ -16,7 +16,21 @@ namespace quizstart
             Console.WriteLine("{0}", sum);
         }
         public static void Q2()
-        {           
+        {
+            int head = 1;
+            int mid = 0;
+            int rear = 1;
+            int sum = 0;
+
+            for (int i = 0; i < 33; i++)
+            {
+                Console.WriteLine("{0}", head);               
+                mid = head + rear;
+                head = rear;
+                rear = mid;
+                if (head%2 ==0) sum += head;               
+            }
+            Console.WriteLine("\n{0}", sum);
         }
         public static void Q3()
         {
@@ -29,6 +43,21 @@ namespace quizstart
                     Console.WriteLine("{0}", i);
                 }
             }
+        }
+        public static void Q4()
+        {
+            int num =1;
+            while (true)
+            {
+                for (int i = 1; i <= 10; i++)
+                {
+                    if (num % i == 0) Console.WriteLine("{0}", i);
+                    else break;
+                }
+                num++;
+                
+            }
+          
         }
     }
 }
